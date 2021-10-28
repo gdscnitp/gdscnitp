@@ -4,7 +4,6 @@ import styles from '../styles/LandingPage.module.css'
 import Image from 'next/image'
 
 // images
-import Logo from "../public/images/Logo.svg";
 
 function Layout({title, keywords, description, children}) {
     return (
@@ -14,10 +13,6 @@ function Layout({title, keywords, description, children}) {
                 <meta name = 'description' content = {description} />
                 <meta name = 'keywords' content = {keywords} />
             </Head>
-            <div className={styles.Logo}>
-                
-            <Image src={Logo} height={46} width={364} />
-            </div>
 
             <div>
                 {children}
