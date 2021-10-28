@@ -1,4 +1,4 @@
-.container {
+/* .container {
   min-height: 100vh;
   padding: 0 0.5rem;
   display: flex;
@@ -118,4 +118,16 @@
     width: 100%;
     flex-direction: column;
   }
+} */
+.navbar-logo{
+  color: '#676C72';
+  text-align: left;
+  padding: 10vh;
+          
 }
+
+.landing-page-img{
+  background-image: url(/public/images/landing-page.png);
+}
+
+
