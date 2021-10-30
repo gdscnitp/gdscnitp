@@ -50,13 +50,13 @@ const Navbar = () => {
       <Link href="/">
         <a className="home">Home</a>
       </Link>
-      <Link href="/events">
+      <Link href="/event">
         <a className="events">Events</a>
       </Link>
       <Link href="/project">
         <a className="project">Project </a>
       </Link>
-      <Link href="/about">
+      <Link href="/AboutUs">
        
         <a className="about">About Us</a>
       </Link>

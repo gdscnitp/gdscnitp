@@ -51,21 +51,26 @@ const Back = styled.div`
 
 const Card = styled.div`
   .math-bg {
+    background-image: url("/images/math.svg");
     position: absolute;
+    padding: 3%;
+    padding-left: 5%;
     top: 14%;
     left: 26%;
-    height: 63vh;
-    width: 75vw;
+    height: 65vh;
+    width: 65vw;
     z-index: 2;
   }
   .blank {
     background-image: url("/images/blank.svg");
     position: absolute;
-    top: 20%;
-    left: 34%;
+    // padding: 9%;
+    // top: 20%;
+    // left: 10%;
     height: 52vh;
-    width: 59vw;
-    padding-left: 20%;
+    width: 56vw;
+    padding-left: 35%;
+    padding-top: 20%
     z-index: 4;
     
   }
@@ -73,12 +78,12 @@ const Card = styled.div`
     color: #676c72;
     /* text-align: center; */
     font-family: "Open Sans", sans-serif;
-    padding-top: 11%;
+    // padding-top: 11%;
    
     font-size: 2.5em;
   }
   .home-text {
-    margin-bottom: 8%;
+    // margin-bottom: 8%;
     font-family: 'Roboto Mono', monospace;
     color: #676c72;
     font-size: 0.77em;
@@ -141,9 +146,8 @@ function Home() {
         
       </Back>
       <Card>
-        <img className="math-bg" src="/images/math.svg" />
-        <img className="bihar-map" src="/images/bihar-map.png" />
-        <img className="patna" src="/images/patna.svg" />
+        <div className="math-bg">
+        {/* <img  src="/images/math.svg" /> */}
         <div className="blank">
           <h1 className="title"> Start a new journey</h1>
           <p className="home-text">
@@ -155,6 +159,10 @@ function Home() {
             <div className="button">Join Us</div>
           </Button>
         </div>
+        </div>
+        <img className="bihar-map" src="/images/bihar-map.png" />
+        <img className="patna" src="/images/patna.svg" />
+        
       </Card>
       <Navbar/>
     </Layout>
