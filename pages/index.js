@@ -5,17 +5,11 @@ import Image from "next/image";
 import styles from "../styles/LandingPage.module.css";
 import Layout from "../components/Layout";
 import data from "../utilis/data";
+import Navbar from "../components/navbar";
+import LogoGDSC from "../components/logo";
 
 import styled from "styled-components";
 
-const Logo = styled.img`
-  height: 4vh;
-  width: auto;
-  position: absolute;
-  margin-top: 3vh;
-  margin-left: 5vw;
-  z-index: 6;
-`;
 
 const Back = styled.div`
   .yellow-wrap {
@@ -132,7 +126,8 @@ const Button = styled.div`
 function Home() {
   return (
     <Layout>
-      <Logo className="logo" src="../images/Logo.svg" />
+      
+      <LogoGDSC />
       <Back>
         <div className="yellow-wrap"></div>
         <img className="mandir" src="/images/Mahavir_Mandir_1_.svg" />
@@ -161,6 +156,7 @@ function Home() {
           </Button>
         </div>
       </Card>
+      <Navbar/>
     </Layout>
   );
 }

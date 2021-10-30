@@ -1,8 +1,6 @@
-import { useEffect } from "react";
-import "../styles/globals.css";
 
-// Use the <Provider> to improve performance and allow components that call
-// `useSession()` anywhere in your application to access the `session` object.
-export default function App({ Component, pageProps }) {
-  return <Component {...pageProps} />;
+import '../styles/globals.css'
+function MyApp({ Component, pageProps }) {
+  return <Component {...pageProps} />
 }
+export default MyApp
