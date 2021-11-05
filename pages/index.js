@@ -139,10 +139,7 @@ function Home() {
         <div className="black-green-wrap">
           <img src="/images/black-green.svg" />
         </div>
-        <img
-          className="main-building-nitp"
-          src="/images/NIT_Patna_Main_Building_1_.svg"
-        />
+        <img className="main-building-nitp" src="/images/NIT_Patna_Main_Building_1_.svg"/>
         
       </Back>
       <Card>
