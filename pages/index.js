@@ -53,7 +53,7 @@ const Card = styled.div`
   .math-bg {
     background-image: url("/images/math.svg");
     position: absolute;
-    padding: 3%;
+    padding: 3.7%;
     padding-left: 5%;
     top: 14%;
     left: 26%;
@@ -70,8 +70,12 @@ const Card = styled.div`
     height: 52vh;
     width: 56vw;
     padding-left: 35%;
-    padding-top: 20%
+    /* padding-top: 10%; */
     z-index: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     
   }
   .title {
@@ -80,13 +84,13 @@ const Card = styled.div`
     font-family: "Open Sans", sans-serif;
     // padding-top: 11%;
    
-    font-size: 2.5em;
+    font-size: 3vw;
   }
   .home-text {
-    // margin-bottom: 8%;
+    
     font-family: 'Roboto Mono', monospace;
     color: #676c72;
-    font-size: 0.77em;
+    font-size: 1vw;
   }
   .bihar-map {
     position: absolute;
@@ -118,7 +122,7 @@ const Button = styled.div`
     text-align: center;
     text-decoration: none;
     display: inline-block;
-    font-size: 16px;
+    font-size: 1.2vw;
     
   }
 

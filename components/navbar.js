@@ -3,11 +3,14 @@ import Link from "next/link";
 
 const Nav = styled.div`
   .blue-nav {
+    
     position: absolute;
     bottom: 0;
     left: 0;
-    width: 100%;
+    
+    /* width: 100%; */
     z-index: 6;
+    
   }
   .home {
     position: absolute;
@@ -46,7 +49,9 @@ const Nav = styled.div`
 const Navbar = () => {
   return (
     <Nav>
+      
       <img className="blue-nav" src="/images/nav.svg" />
+      
       <Link href="/">
         <a className="home">Home</a>
       </Link>
