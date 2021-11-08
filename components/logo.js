@@ -3,10 +3,10 @@ import styled from "styled-components";
 const Logo = styled.img`
   // height: 4vh;
   // width: auto;
-  height: 6vh;
+  height: 5vh;
   position: absolute;
   margin-top: 3vh;
-  margin-left: 5vw;
+  margin-left: 7vw;
   z-index: 6;
 `;
 
