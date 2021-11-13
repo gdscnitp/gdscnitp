@@ -50,7 +50,7 @@ const Navbar = () => {
   return (
     <Nav>
       
-      <img className="blue-nav" src="/images/nav.svg" />
+      <img className="blue-nav" src="/images/nav.svg" alt="blue-nav"/>
       
       <Link href="/">
         <a className="home">Home</a>

@@ -104,7 +104,7 @@ function event() {
         <Event>
           <div className="red-wrap"></div>
           <div className="yellow-black-wrap">
-            <img src="/images/yellow-black-event.svg" />
+            <img src="/images/yellow-black-event.svg" alt="yellow-black" />
           </div>
           <div className="writing-wrap">
             <h4 className="event-name">Event Name</h4>
