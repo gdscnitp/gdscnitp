@@ -139,11 +139,11 @@ function Home() {
       <LogoGDSC />
       <Back>
         <div className="yellow-wrap"></div>
-        <img className="mandir" src="/images/Mahavir_Mandir_1_.svg" />
+        <img className="mandir" src="/images/Mahavir_Mandir_1_.svg" alt="mahavir-mandir" />
         <div className="black-green-wrap">
-          <img src="/images/black-green.svg" />
+          <img src="/images/black-green.svg" alt="black-green"/>
         </div>
-        <img className="main-building-nitp" src="/images/NIT_Patna_Main_Building_1_.svg"/>
+        <img className="main-building-nitp" src="/images/NIT_Patna_Main_Building_1_.svg" alt="nit-patna" />
         
       </Back>
       <Card>
@@ -161,8 +161,8 @@ function Home() {
           </Button>
         </div>
         </div>
-        <img className="bihar-map" src="/images/bihar-map.png" />
-        <img className="patna" src="/images/patna.svg" />
+        <img className="bihar-map" src="/images/bihar-map.png" alt="bihar-map" />
+        <img className="patna" src="/images/patna.svg" alt="patna" />
         
       </Card>
       <Navbar/>

@@ -102,7 +102,7 @@ function project() {
     <div>
       <Project>
         <LogoGDSC />
-        <img className="wrap" src="/images/project-wrap.svg" />
+        <img className="wrap" src="/images/project-wrap.svg" alt="wrap"/>
         <div className="writing-wrap">
           <h4 className="project-name">Project Name</h4>
           <p className="project-des">

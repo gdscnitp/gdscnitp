@@ -162,18 +162,18 @@ function AboutUs() {
               <Button2/>
             <div className="red-wrap"></div>
             <div className="blue-black-wrap">
-            <img src="/images/AboutUsBlueBlack.svg" />
+            <img src="/images/AboutUsBlueBlack.svg" alt="blue-back"/>
             </div>
             {/* <div className="green-bg"> */}
                 {/* <img src="/images/AboutUsGreen.svg"/> */}
-                <img className="green-bg" src="/images/AboutUsGreen.png"/>
+                <img className="green-bg" src="/images/AboutUsGreen.png" alt="green-bg"/>
             {/* </div> */}
             
             </Back>
             <Card>
               <div className="math-wrap">
               <div className="white-wrap">
-              <img src="/images/AboutUsWhite.svg" />
+              <img src="/images/AboutUsWhite.svg" alt="white" />
               </div>
               <div className="content">
                 <p className="title">Person’s Name</p>
@@ -182,10 +182,10 @@ function AboutUs() {
                 {/* <Button> */}
                 <div className="button">Meet</div>
                 <div className="socials">
-                <img className="socilsIndividual" src="/images/fbLogo.svg"/>
-                <img className="socilsIndividual" src="/images/twitterLogo.svg"/>
-                <img className="socilsIndividual" src="/images/linkedinLogo.svg"/>
-                <img className="socilsIndividual" src="/images/instaLogo.svg"/>
+                <img className="socilsIndividual" src="/images/fbLogo.svg" alt="fblogo"/>
+                <img className="socilsIndividual" src="/images/twitterLogo.svg" alt="twitterlogo"/>
+                <img className="socilsIndividual" src="/images/linkedinLogo.svg" alt="linkedinlogo"/>
+                <img className="socilsIndividual" src="/images/instaLogo.svg" alt="instalogo"/>
                 </div>
                 {/* </Button> */}
               </div>
