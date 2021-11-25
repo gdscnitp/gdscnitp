@@ -217,28 +217,28 @@ function Home() {
             </Button>
             <div className="social">
               <a
-                href="https://www.facebook.com/gdsc.nitp/"
+                href="https://www.facebook.com/gdscnitp/"
                 target="_blank"
                 rel="noreferrer"
               >
                 <img src="/images/fbLogo.svg" alt="facebook" />
               </a>
               <a
-                href="https://www.instagram.com/gdsc.nitp/"
+                href="https://www.instagram.com/gdscnitp/"
                 target="_blank"
                 rel="noreferrer"
               >
                 <img src="/images/instaLogo.svg" alt="instagram" />
               </a>
               <a
-                href="https://twitter.com/gdsc_nitp"
+                href="https://twitter.com/gdscnitp"
                 target="_blank"
                 rel="noreferrer"
               >
                 <img src="/images/twitterLogo.svg" alt="twitter" />
               </a>
               <a
-                href="https://www.linkedin.com/company/gdsc-nitp/"
+                href="https://www.linkedin.com/company/gdscnitp/"
                 target="_blank"
                 rel="noreferrer"
               >
