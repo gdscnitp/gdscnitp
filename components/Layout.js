@@ -33,7 +33,7 @@ function Layout({ title, keywords, description, children }) {
   );
 }
 Layout.defaultProps = {
-  title: "Welcome to DSC",
+  title: "GDSC NIT Patna",
   keywords: "..",
   description: "..",
 };

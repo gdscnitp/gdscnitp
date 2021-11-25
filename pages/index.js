@@ -28,8 +28,12 @@ const Back = styled.div`
     right: 0;
     top: 20%;
     position: absolute;
-    width: 20vw;
+    width: auto;
+    min-height: 50vh;
+    width: 18vw;
     height: 50vh;
+    max-height: 50vh;
+    overflow: hidden;
     z-index: -2;
     @media (max-width: 768px) {
       display: none;
@@ -122,6 +126,13 @@ const Card = styled.div`
         font-size: 1.3rem;
         text-align: left;
       }
+      .social {
+        position: absolute;
+        bottom: 3%;
+        a {
+          margin-right: 3rem;
+        }
+      }
     }
     @media (max-width: 768px) {
       position: relative;
@@ -137,31 +148,29 @@ const Card = styled.div`
         .home-text {
           font-size: 1.2rem;
         }
-        .title{
+        .title {
           font-size: 3rem;
         }
       }
     }
   }
 `;
-const Button = styled.div`
-  .button {
-    background-color: #4285f4;
-    border: none;
-    color: white;
-    box-sizing: border-box;
-    min-width:100px;
-    min-height: 40px;
-    padding: 0.7em 2.5em;
-    border-radius: 2%;
-    font-family: "Open Sans", sans-serif;
-    text-align: center;
-    text-decoration: none;
-    display: inline-block;
-    font-size: 1rem;
-  }
+const Button = styled.a`
+  background-color: #4285f4;
+  border: none;
+  color: white;
+  box-sizing: border-box;
+  width: 140px;
+  min-height: 40px;
+  padding: 0.7em 2.5em;
+  border-radius: 2%;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
 
-  .button:hover {
+  &:hover {
     background-color: white;
     color: black;
     border: 2px solid #4285f4;
@@ -200,9 +209,42 @@ function Home() {
               around the world here with the National
               <br /> Institute of Technology Patna-chapter
             </p>
-            <Button>
-              <div className="button">Join Us</div>
+            <Button
+              href="https://gdsc.community.dev/national-institute-of-technology-nit-patna/"
+              target="_blank"
+            >
+              Join Us
             </Button>
+            <div className="social">
+              <a
+                href="https://www.facebook.com/gdsc.nitp/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src="/images/fbLogo.svg" alt="facebook" />
+              </a>
+              <a
+                href="https://www.instagram.com/gdsc.nitp/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src="/images/instaLogo.svg" alt="instagram" />
+              </a>
+              <a
+                href="https://twitter.com/gdsc_nitp"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src="/images/twitterLogo.svg" alt="twitter" />
+              </a>
+              <a
+                href="https://www.linkedin.com/company/gdsc-nitp/"
+                target="_blank"
+                rel="noreferrer"
+              >
+                <img src="/images/linkedinLogo.svg" alt="linkedin" />
+              </a>
+            </div>
           </div>
         </div>
       </Card>
