@@ -1,11 +1,17 @@
 import Head from "next/head";
 import Image from "next/image";
 
+import styled from "styled-components";
 
+const Lay = styled.div`
+height:100vh;
+max-height:100vh;
+overflow:hidden;
+`
 
 function Layout({ title, keywords, description, children }) {
   return (
-    <div>
+    <Lay>
       <Head>
         <title>{title}</title>
 
@@ -23,7 +29,7 @@ function Layout({ title, keywords, description, children }) {
       </Head>
 
       <div>{children}</div>
-    </div>
+    </Lay>
   );
 }
 Layout.defaultProps = {
