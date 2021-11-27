@@ -24,12 +24,18 @@ const Back = styled.div`
     }
   }
   .blue-black-wrap {
-    right: -23vw;
-    top: 0.5%;
+    right: 0;
     position: absolute;
-    width: 45vw;
-    // height: 100%;
+    width: 25vw;
+    height: 100vh;
+    overflow: hidden;
     z-index: -2;
+    img{
+      height: 110vh;
+    }
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
   // .green-bg{
   //   position: absolute;

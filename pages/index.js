@@ -26,15 +26,17 @@ const Back = styled.div`
   }
   .black-green-wrap {
     right: 0;
-    top: 20%;
+    top: 0;
     position: absolute;
     width: auto;
-    min-height: 50vh;
-    width: 18vw;
-    height: 50vh;
-    max-height: 50vh;
+    width: 22vw;
+    height: 100vh;
+    max-height: 100vh;
     overflow: hidden;
     z-index: -2;
+    img{
+      height: 100%;
+    }
     @media (max-width: 768px) {
       display: none;
     }
@@ -66,6 +68,7 @@ const Back = styled.div`
       left: -4%;
       height: auto;
       top: 10vh;
+      max-height: 26vh;
     }
   }
   .bihar-map {
@@ -81,6 +84,7 @@ const Back = styled.div`
       height: auto;
       width: 90vw;
       min-width: 74vw;
+      max-height: 24vh;
       top: 10%;
       left: 15vw;
     }
@@ -125,16 +129,20 @@ const Card = styled.div`
         color: #676c72;
         font-size: 1.3rem;
         text-align: left;
+        max-width:600px;
       }
       .social {
         position: absolute;
         bottom: 3%;
         a {
           margin-right: 3rem;
+          img{
+            max-height: 2vh;
+          }
         }
       }
     }
-    @media (max-width: 768px) {
+    @media (max-width: 768px ) {
       position: relative;
       margin-top: 15vh;
       width: 90vw;
@@ -146,10 +154,20 @@ const Card = styled.div`
         padding-left: 1vw;
         display: block;
         .home-text {
-          font-size: 1.2rem;
+          font-size: 1rem;
         }
         .title {
-          font-size: 3rem;
+          font-size: 2.5rem;
+        }
+      }
+    }
+    @media (max-height: 768px) {
+      .blank {
+        .home-text {
+          font-size: 1rem;
+        }
+        .title {
+          font-size: 1.6rem;
         }
       }
     }
@@ -203,11 +221,11 @@ function Home() {
         <div className="math-bg">
           {/* <img  src="/images/math.svg" /> */}
           <div className="blank">
-            <h1 className="title"> Start a new journey</h1>
+            <h1 className="title"> Start a new<br/> journey</h1>
             <p className="home-text">
-              Explore the community of developers from <br />
+              Explore the community of developers from
               around the world here with the National
-              <br /> Institute of Technology Patna-chapter
+              Institute of Technology Patna-chapter
             </p>
             <Button
               href="https://gdsc.community.dev/national-institute-of-technology-nit-patna/"

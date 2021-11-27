@@ -20,13 +20,19 @@ const Event = styled.div`
     }
   }
   .yellow-black-wrap {
-    left: 79%;
     right: 0;
-    top: 20%;
+    top: 0;
     position: absolute;
-    width: 40vw;
-    height: 70vh;
+    width: 25vw;
+    height: 100vh;
     z-index: -2;
+    overflow: hidden;
+    img{
+      height: 100%;
+    }
+    @media (max-width: 768px) {
+      display: none;
+    }
   }
 
   .writing-wrap {
