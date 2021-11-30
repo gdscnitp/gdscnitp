@@ -19,9 +19,11 @@ const Back = styled.div`
     height: 30vh;
     z-index: -1;
     @media (max-width: 768px) {
-      width: 100vw;
-      bottom: 0;
-      height: 15vh;
+      width: 50vw;
+      right: 0;
+      bottom: 30vh;
+      height: 25vh;
+      z-index: -1;
     }
   }
   .black-green-wrap {
@@ -29,7 +31,7 @@ const Back = styled.div`
     top: 0;
     position: absolute;
     width: auto;
-    width: 22vw;
+    /* width: 22vw; */
     height: 100vh;
     max-height: 100vh;
     overflow: hidden;
@@ -38,24 +40,35 @@ const Back = styled.div`
       height: 100%;
     }
     @media (max-width: 768px) {
-      display: none;
+      width: auto;
+      right: 0;
+      top: 65vh;
+      height: 36vh;
+      z-index: -2;
+      bottom: 10vh;
     }
   }
   .mandir {
     position: absolute;
-    top: 0;
+    top: -5%;
     margin-left: 30vw;
     height: 30vh;
     width: 20vw;
     @media (max-width: 768px) {
       top: auto;
-      bottom: 20vh;
+      bottom: 50vh;
       right: 0;
       margin-right: 0;
       height: auto;
       width: 40vw;
       margin: auto;
+      z-index: -2;
     }
+    animation: mandirAnimation 1s;
+  }
+  @keyframes mandirAnimation{
+    from {top: -10%;}
+    to {top: -5%;}
   }
   .main-building-nitp {
     position: absolute;
@@ -70,7 +83,12 @@ const Back = styled.div`
       top: 10vh;
       max-height: 26vh;
     }
+    animation: nitpAnimation 1s ;
   }
+  @keyframes nitpAnimation {
+  from {left: -16%;}
+  to {left: -8%;}
+}
   .bihar-map {
     position: absolute;
     height: 52vh;
@@ -95,7 +113,7 @@ const Card = styled.div`
   .math-bg {
     background-image: url("/images/math.svg");
     position: absolute;
-    padding: 3.7%;
+    padding: 3.1%;
     padding-left: 5%;
     top: 14%;
     left: 26%;
@@ -105,22 +123,16 @@ const Card = styled.div`
     .blank {
       background-image: url("/images/blank.svg");
       position: absolute;
-      // padding: 9%;
-      // top: 20%;
-      // left: 10%;
       height: 62vh;
       width: 56vw;
       padding-left: 19vw;
-      /* padding-top: 10%; */
       z-index: 4;
       display: flex;
       flex-direction: column;
       justify-content: center;
       .title {
         color: #676c72;
-        /* text-align: center; */
         font-family: "Open Sans", sans-serif;
-        // padding-top: 11%;
         font-size: 3rem;
       }
 
@@ -137,7 +149,7 @@ const Card = styled.div`
         a {
           margin-right: 3rem;
           img{
-            max-height: 2vh;
+            max-height: 4vh;
           }
         }
       }
@@ -145,12 +157,13 @@ const Card = styled.div`
     @media (max-width: 768px ) {
       position: relative;
       margin-top: 15vh;
-      width: 90vw;
+      width: 88vw;
       left: 5vw;
-      height: 50vh;
+      height: 60vh;
+      z-index: -1;
       .blank {
-        width: 80vw;
-        height: 45vh;
+        width: 78vw;
+        height: 56vh;
         padding-left: 1vw;
         display: block;
         .home-text {
@@ -202,7 +215,7 @@ function Home() {
         <div className="yellow-wrap"></div>
         <img
           className="mandir"
-          src="/images/Mahavir_Mandir_1_.svg"
+          src="/images/Mahavir_Mandir1_.svg"
           alt="mahavir-mandir"
         />
         <div className="black-green-wrap">
@@ -219,9 +232,8 @@ function Home() {
       </Back>
       <Card>
         <div className="math-bg">
-          {/* <img  src="/images/math.svg" /> */}
           <div className="blank">
-            <h1 className="title"> Start a new<br/> journey</h1>
+            <h1 className="title"> Start a new journey</h1>
             <p className="home-text">
               Explore the community of developers from
               around the world here with the National
