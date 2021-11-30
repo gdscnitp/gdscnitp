@@ -3,7 +3,7 @@ import styled from "styled-components";
 const Button = styled.button`
   position: absolute;
   font-family: "Open Sans", sans-serif;
-//   font-weight: bold;
+  width: 15vw;
   border: 1px #FBBC04;
   background-color: #FBBC04;
   color: white;
@@ -14,11 +14,17 @@ const Button = styled.button`
   margin-top: 22vh;
   z-index: 2;
   margin-left: 7vw;
+  @media (max-width: 768px) {
+     font-size: 12px;
+     margin-top: 12vh;
+     right: 5vw;
+     width: 42vw;
+    }
 `;
 
 const Button2 = () => {
     return (
-    <Button>Filter by Roles ‘Active’</Button>
+    <Button>Filter by Roles </Button>
     );
 }
 
