@@ -145,7 +145,7 @@ const Card = styled.div`
       }
       .social {
         position: absolute;
-        bottom: 3%;
+        bottom: 9%;
         a {
           margin-right: 3rem;
           img{

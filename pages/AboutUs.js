@@ -29,7 +29,9 @@ const Back = styled.div`
     right: 0;
     position: absolute;
     width: 23vw;
+    max-height: 100vh;
     height: 100vh;
+    bottom: 0;
     overflow: hidden;
     z-index: -2;
     img{
