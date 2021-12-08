@@ -7,7 +7,7 @@ import ProjectScroll from "../components/ProjectScroll";
 
 const Project = styled.div`
   .wrap {
-    left: 75%;
+    /* left: 75%;
     position: absolute;
     width: auto;
     height: 99.9vh;
@@ -15,6 +15,24 @@ const Project = styled.div`
     @media (max-width: 768px) {
       width: 100vw;
       bottom: 0;
+    } */
+    right: 0;
+    position: absolute;
+    width: 45vw;
+    height: 100vh;
+    /* max-height: 100vh; */
+    top: 0;
+    overflow: hidden;
+    z-index: -2;
+    img{
+      height: 110vh;
+    }
+    @media (max-width: 768px) {
+      width: 70vw;
+      right: 0;
+      bottom: 0;
+      height: 55vh;
+      z-index: -2;
     }
   }
 
