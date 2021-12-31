@@ -5,61 +5,55 @@ import Navbar from "../components/navbar";
 import ProjectButton from "../components/ProjectButton";
 import ProjectScroll from "../components/ProjectScroll";
 
-const Project = styled.div`
-  .wrap {
-    /* left: 75%;
+const Container =styled.div`
+max-width: 100%;
+overflow: hidden;
+`;
+
+const Back = styled.div`
+  .blue-wrap {
+    background-image: url("/images/blue-dot.svg");
+    right: 0;
+    top: -4vh;
     position: absolute;
-    width: auto;
-    height: 99.9vh;
+    width: 20vw;
+    height: 40vh;
     z-index: -1;
     @media (max-width: 768px) {
-      width: 100vw;
-      bottom: 0;
-    } */
+      width: 50vw;
+      top: 55vh;
+      right: 0;
+      /* bottom: 30vh; */
+      height: 22vh;
+      z-index: -1;
+    }
+  }
+  .black-green-wrap {
     right: 0;
-    position: absolute;
-    width: 45vw;
-    height: 100vh;
-    /* max-height: 100vh; */
     top: 0;
+    position: absolute;
+    width: auto;
+    /* width: 22vw; */
+    height: 100vh;
+    max-height: 100vh;
     overflow: hidden;
     z-index: -2;
     img{
-      height: 110vh;
+      height: 100%;
     }
     @media (max-width: 768px) {
-      width: 70vw;
+      width: auto;
       right: 0;
-      bottom: 0;
-      height: 55vh;
+      top: 65vh;
+      height: 36vh;
       z-index: -2;
+      bottom: 10vh;
     }
   }
+`;
 
-  .writing-wrap {
-    padding: 3.7% 12% 0 5%;
-    background-image: url("/images/writing-wrap.svg");
-    margin-left: 66%;
-    position: absolute;
-    margin-top: 7%;
-    width: auto;
-    height: 65vh;
-    background-repeat: no-repeat;
-  }
-  .project-name {
-    color: #676c72;
-    position: absolute;
-    font-family: "Open Sans", sans-serif;
-    font-size: 1.2em;
-  }
-  .project-des {
-    color: #676c72;
-    font-family: "Roboto Mono", monospace;
-    position: relative;
-    text-align: justify;
-    top: 12%;
-    font-size: 0.9em;
-  }
+const Project = styled.div`
+  /*
   .project-thumbnail {
     position: absolute;
     height: 45vh;
@@ -69,7 +63,7 @@ const Project = styled.div`
     z-index: 5;
     top: 12%;
     margin-left: 5vw;
-  }
+  } */
   .scroll {
     position: absolute;
     height: 45vh;
@@ -91,54 +85,144 @@ const Project = styled.div`
     z-index: 7;
     font-weight: bolder;
     font-size: 1.4em;
+    @media (max-width: 768px) {
+      top: 40vh;
+    }
   }
 `;
 
-const Button = styled.div`
-  .button {
-    background-color: white;
-    border: solid 1px #4285f4;
-    color: #4285f4;
-    padding: 0.4em 5em;
-    border-radius: 2%;
-    font-family: "Open Sans", sans-serif;
-    text-align: center;
-
-    display: inline-block;
-    font-size: 1.2vw;
+const Card = styled.div`
+  .math-bg {
+    background-image: url("/images/math.svg");
+    position: absolute;
+    padding: 2%;
+    top: 14%;
+    left: 66%;
+    height: 70vh;
+    width: 26vw;
+    z-index: 2;
+    .blank {
+      background-image: url("/images/blank.svg");
+      position: absolute;
+      height: 62vh;
+      width: 22vw;
+      padding-left: 2vw;
+      z-index: 4;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      .title {
+        color: #676c72;
+        font-family: "Open Sans", sans-serif;
+        font-size: 4rem;
+      }
+      .project-des {
+        font-family: "Roboto Mono", monospace;
+        color: #676c72;
+        font-size: 1.3rem;
+        text-align: left;
+        max-width:600px;
+      }
+      .social {
+        position: absolute;
+        bottom: 5%;
+        a {
+          margin-right: 3rem;
+          img{
+            max-height: 4vh;
+          }
+        }
+      }
+    }
+    @media (max-width: 768px ) {
+      position: relative;
+      margin-top: 53vh;
+      padding: 5vw;
+      width: 88vw;
+      left: 5vw;
+      height: 45vh;
+      z-index: -1;
+      .blank {
+        width: 78vw;
+        height: 45vh;
+        padding-left: 3vw;
+        display: block;
+        .project-des {
+          font-size: 1rem;
+        }
+        .title {
+          font-size: 2.5rem;
+          margin-top: 2vh;
+        }
+      }
+    }
+    @media (max-height: 768px) {
+      .blank {
+        .project-des {
+          font-size: 1rem;
+        }
+        .title {
+          font-size: 1.6rem;
+        }
+      }
+    }
   }
+`;
 
-  .button:hover {
-    background-color: #4285f4;
-    color: white;
-    border: 2px solid #4285f4;
+const Button = styled.a`
+  background-color: white;
+  border: 2px solid #4285f4;
+  color: #4285f4;
+  box-sizing: border-box;
+  width: 240px;
+  min-height: 38px;
+  padding: 0.5em 2.5em;
+  border-radius: 2%;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 1rem;
+
+  &:hover {
+    background-color: white;
+    font-weight: bold;
+    /* color: black; */
+    border: 4px solid #4285f4;
   }
 `;
 
 function project() {
   return (
-    <div>
-      <Project>
+      <Container>
         <LogoGDSC />
-        <img className="wrap" src="/images/project-wrap.svg" alt="wrap"/>
-        <div className="writing-wrap">
-          <h4 className="project-name">Project Name</h4>
-          <p className="project-des">
-            Project Description- Explore the community of developers from around
-            the world here with the National Institute of Technology
-            Patna-chapter
-          </p>
-          <Button>
-            <div className="button" style={{ marginTop: "100%" }}>
-              GitHub
-            </div>
-          </Button>
+        <Back>
+        <div className="blue-wrap"></div>
+        <div className="black-green-wrap">
+          <img src="/images/black-green.svg" alt="black-green" />
         </div>
-        <div className="project-thumbnail"></div>
-        <div className="scroll"></div>
-        
+        </Back>
 
-        <ProjectScroll number="1" />
+        <Card>
+        <div className="math-bg">
+          <div className="blank">
+            <h1 className="title"> Project Name</h1>
+            <p className="project-des">
+            Project Description- Explore the community of developers from around the world here with the National Institute of Technology Patna-chapter
+            </p>
+            <Button
+              href=" "
+            >
+              GitHub
+            </Button>
+          </div>
+        </div>
+      </Card>
+
+<Project>
+        {/* <div className="project-thumbnail"></div>
+        <div className="scroll"></div> */}
+        {/* <ProjectScroll number="1" /> */}
         <div className="milestones">
           Milestones Cleared
           </div>
@@ -157,7 +241,7 @@ function project() {
 
         <Navbar />
       </Project>
-    </div>
+      </Container>
   );
 }
 
