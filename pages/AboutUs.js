@@ -45,12 +45,6 @@ const Back = styled.div`
       z-index: -2;
     }
   }
-  // .green-bg{
-  //   position: absolute;
-  //   width: 130%;
-  //   top: -50%;
-  //   left: -56%;
-  // }
   .green-bg{
     position: absolute;
     bottom: 0;
@@ -61,92 +55,7 @@ const Back = styled.div`
   }
 
  `; 
-//  const Card = styled.div`
-//   .math-wrap{
-//   background-image: url("/images/AboutUsCard2.svg");
-//   position: absolute;
-//   background-repeat: no-repeat;
-//   // bottom: 0;
-//   top: 10%;
-//   left: 43%;
-//   // height: 150vh;
-//   // width: 190vw;
-//   padding: 9vh 5vw;
-//   }
 
-//   .white-wrap{
-//     // position: absolute;
-//     height: auto;
-//     width: 40vw;
-//     z-index: -1;
-//   }
-
-//   .content{
-//     position: absolute;
-//     // margin-top: 1%;
-//     top: 10%;
-//     z-index: 1;
-//     margin-left: 15%;
-//     @media (max-width: 768px) {
-//      display: none;
-//     }
-//   } 
-//   .title{
-//     font-family: "Open Sans", sans-serif;
-//     font-weight: bold;
-//     color: #676C72;
-//     font-size: 35px;
-//   }
-//   .subTitle{
-//     position: absolute;
-//     margin-top: -12%;
-//     color: #ff0000;
-//     font-family: 'Roboto Mono', monospace;
-//     font-size: 21px;
-//   }
-//   .desc{
-//     position: absolute;
-//     font-family: 'Roboto Mono', monospace;
-//     color: #676C72;
-//     font-size: 14px;
-//     text-align: justify;
-//     width: 120%;
-//   }
-//   .button {
-//     background-color: #4285f4;
-//     border: none;
-//     color: white;
-//     padding: 0.7em 2.5em;
-//     border-radius: 2%;
-//     font-family: "Open Sans", sans-serif;
-//     font-weight: bold;
-//     text-align: center;
-//     text-decoration: none;
-//     display: inline-block;
-//     font-size: 1.2vw;
-//     margin-top: 23vh;
-    
-//   }
-
-//   .button:hover {
-//     background-color: white;
-//     color: black;
-//     border: 2px solid #4285f4;
-//     // cursor: pointer;
-//   }
-//   .socials{
-//     position: absolute;
-//     width: 55%;
-//     margin-top: -8%;
-//     margin-left: 70%;
-//     @media (max-width: 768px) {
-//      display: none;
-//     }
-//   }
-//   .socilsIndividual{
-//     margin: 1.2vh;
-//   }
-//  `;
 const Card = styled.div`
   .math-bg {
     background-image: url("/images/math.svg");
@@ -198,6 +107,9 @@ const Card = styled.div`
             max-height: 4vh;
           }
         }
+        @media (max-width: 768px) {
+      bottom: 10vh;
+    }
       }
     }
     @media (max-width: 768px ) {
@@ -272,10 +184,7 @@ function AboutUs() {
             <div className="blue-black-wrap">
             <img src="/images/AboutUsBlueBlack.svg" alt="blue-back"/>
             </div>
-            {/* <div className="green-bg"> */}
-                {/* <img src="/images/AboutUsGreen.svg"/> */}
                 <img className="green-bg" src="/images/AboutUsGreen.png" alt="green-bg"/>
-            {/* </div> */}
             
             </Back>
             <Card>
