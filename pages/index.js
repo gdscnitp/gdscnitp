@@ -154,6 +154,9 @@ const Card = styled.div`
             max-height: 4vh;
           }
         }
+        @media (max-width: 768px) {
+      bottom: 10vh;
+    }
       }
     }
     @media (max-width: 768px ) {
