@@ -7,10 +7,12 @@ import Layout from "../components/Layout";
 import data from "../utilis/data";
 import Navbar from "../components/navbar";
 import LogoGDSC from "../components/logo";
+import NavMobile from "../components/NavMobile";
 
 import styled from "styled-components";
 
 const Back = styled.div`
+
   .yellow-wrap {
     background-image: url("/images/yellow-dot.svg");
     right: 0;
@@ -279,6 +281,7 @@ function Home() {
         </div>
       </Card>
       <Navbar />
+      <NavMobile />
     </Layout>
   );
 }

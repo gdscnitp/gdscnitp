@@ -2,6 +2,7 @@ import styled from "styled-components";
 import "../styles/Home.module.css";
 import LogoGDSC from "../components/logo";
 import Navbar from "../components/navbar";
+import NavMobile from "../components/NavMobile";
 
 const Container =styled.div`
 max-width: 100%;
@@ -222,6 +223,7 @@ function event() {
         </div>
       </Card>
         <Navbar />
+        <NavMobile />
     </Container>
   );
 }
