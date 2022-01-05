@@ -1,7 +1,12 @@
 import styled from "styled-components";
 import Link from "next/link";
+import Layout from "./Layout";
+
 
 const Nav = styled.div`
+@media (max-width: 768px){
+  display:none;
+}
   position: absolute;
   bottom: 0;
   width: 100%;
@@ -14,6 +19,14 @@ const Nav = styled.div`
   background-size: cover;
   display: flex;
   color: #fff;
+
+  
+  
+  
+  
+  
+  
+
 `;
 
 const Navbar = () => {
@@ -32,8 +45,10 @@ const Navbar = () => {
       <Link href="/AboutUs">
         <a className="about">About Us</a>
       </Link>
+      
     </Nav>
   );
 };
+
 
 export default Navbar;
