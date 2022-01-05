@@ -18,28 +18,21 @@ const Nav = styled.div`
   height: 5vh;
   background-size: cover;
   display: flex;
-  /* background: #000; */
   color: #fff;
-  .blue-nav {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    /* width: 100%; */
-    z-index: 6;
-  }
+
   
   
   
   
   
+  
+
 `;
 
 const Navbar = () => {
   return (
     <Nav>
-      
-      {/* <img className="blue-nav" src="/images/nav.svg" alt="blue-nav" /> */}
-      
+
       <Link href="/">
         <a className="home">Home</a>
       </Link>

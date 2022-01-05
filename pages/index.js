@@ -10,6 +10,49 @@ import LogoGDSC from "../components/logo";
 import NavMobile from "../components/NavMobile";
 
 import styled from "styled-components";
+// import { Container } from "@material-ui/core";
+
+const Container =styled.div`
+max-width: 100%;
+overflow: hidden;
+.mobButton{
+  background-color: #4285f4;
+  border: none;
+  color: white;
+  box-sizing: border-box;
+  width: 140px;
+  min-height: 40px;
+  padding: 0.7em 2.5em;
+  border-radius: 2%;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  visibility: hidden;
+  @media (max-width: 768px) {
+    position: absolute;
+      margin-top: -28vh;
+      margin-left: 12vw;
+      visibility: visible;
+    }
+}
+.mobSocials{
+  visibility: hidden;
+  @media (max-width: 768px) {
+    position: absolute;
+      visibility: visible;
+      z-index: 20;
+      bottom: 15vh;
+      left: 12vw;
+      a {
+          margin-right: 3rem;
+          img{
+            max-height: 4vh;
+          }
+        }
+    }
+}
+`;
 
 const Back = styled.div`
 
@@ -155,8 +198,9 @@ const Card = styled.div`
           }
         }
         @media (max-width: 768px) {
-      bottom: 10vh;
-    }
+        bottom: 10vh;
+        display: none;
+        }
       }
     }
     @media (max-width: 768px ) {
@@ -205,6 +249,9 @@ const Button = styled.a`
   text-decoration: none;
   display: inline-block;
   font-size: 1rem;
+  @media (max-width: 768px) {
+        display: none;
+        }
 
   &:hover {
     background-color: white;
@@ -214,7 +261,7 @@ const Button = styled.a`
 `;
 function Home() {
   return (
-    <Layout>
+    <Container>
       <LogoGDSC />
       <Back>
         <div className="yellow-wrap"></div>
@@ -244,48 +291,48 @@ function Home() {
               around the world here with the National
               Institute of Technology Patna-chapter
             </p>
-            <Button
-              href="https://gdsc.community.dev/national-institute-of-technology-nit-patna/"
-              target="_blank"
+            <Button href="https://gdsc.community.dev/national-institute-of-technology-nit-patna/" target="_blank"
             >
               Join Us
             </Button>
             <div className="social">
-              <a
-                href="https://www.facebook.com/gdscnitp/"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href="https://www.facebook.com/gdscnitp/" target="_blank" rel="noreferrer">
                 <img src="/images/fbLogo.svg" alt="facebook" />
               </a>
-              <a
-                href="https://www.instagram.com/gdscnitp/"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href="https://www.instagram.com/gdscnitp/" target="_blank" rel="noreferrer">
                 <img src="/images/instaLogo.svg" alt="instagram" />
               </a>
-              <a
-                href="https://twitter.com/gdscnitp"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href="https://twitter.com/gdscnitp" target="_blank" rel="noreferrer">
                 <img src="/images/twitterLogo.svg" alt="twitter" />
               </a>
-              <a
-                href="https://www.linkedin.com/company/gdscnitp/"
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href="https://www.linkedin.com/company/gdscnitp/" target="_blank" rel="noreferrer">
                 <img src="/images/linkedinLogo.svg" alt="linkedin" />
               </a>
             </div>
           </div>
         </div>
       </Card>
+      <button className="mobButton"><a href="https://gdsc.community.dev/national-institute-of-technology-nit-patna/">Join Us</a></button>
+      <div className="mobSocials">
+      <a href="https://www.facebook.com/gdscnitp/" target="_blank" rel="noreferrer">
+                <img src="/images/fbLogo.svg" alt="facebook" />
+              </a>
+              <a href="https://www.instagram.com/gdscnitp/" target="_blank" rel="noreferrer">
+                <img src="/images/instaLogo.svg" alt="instagram" />
+              </a>
+              <a href="https://twitter.com/gdscnitp" target="_blank" rel="noreferrer">
+                <img src="/images/twitterLogo.svg" alt="twitter" />
+              </a>
+              <a href="https://www.linkedin.com/company/gdscnitp/" target="_blank" rel="noreferrer">
+                <img src="/images/linkedinLogo.svg" alt="linkedin" />
+              </a>
+      </div>
       <Navbar />
+
       <NavMobile />
-    </Layout>
+    
+    </Container>
+
   );
 }
 
