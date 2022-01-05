@@ -13,53 +13,12 @@ const Nav = styled.div`
   height: 5vh;
   background-size: cover;
   display: flex;
-  /* background: #000; */
   color: #fff;
-  .blue-nav {
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    /* width: 100%; */
-    z-index: 6;
-  }
-  /* .home {
-    position: absolute;
-    bottom: 4%;
-    left: 18.5%;
-    z-index: 7;
-    color: white;
-    font-family: "Open Sans", sans-serif, medium;
-  }
-  .events {
-    position: absolute;
-    bottom: 4%;
-    left: 38.5%;
-    z-index: 7;
-    color: white;
-    font-family: "Open Sans", sans-serif, medium;
-  }
-  .project {
-    position: absolute;
-    bottom: 4%;
-    left: 58.5%;
-    z-index: 7;
-    color: white;
-    font-family: "Open Sans", sans-serif, medium;
-  }
-  .about {
-    position: absolute;
-    bottom: 4%;
-    left: 78.5%;
-    z-index: 7;
-    color: white;
-    font-family: "Open Sans", sans-serif, medium;
-  } */
 `;
 
 const Navbar = () => {
   return (
     <Nav>
-      {/* <img className="blue-nav" src="/images/nav.svg" alt="blue-nav" /> */}
 
       <Link href="/">
         <a className="home">Home</a>

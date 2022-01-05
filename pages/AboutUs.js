@@ -8,6 +8,43 @@ import Button2 from "../components/AboutUsButton2";
 const Container =styled.div`
 max-width: 100%;
 overflow: hidden;
+.mobButton{
+  background-color: #4285f4;
+  border: none;
+  color: white;
+  box-sizing: border-box;
+  width: 140px;
+  min-height: 40px;
+  padding: 0.7em 2.5em;
+  border-radius: 2%;
+  font-family: "Open Sans", sans-serif;
+  text-align: center;
+  text-decoration: none;
+  font-size: 1rem;
+  visibility: hidden;
+  @media (max-width: 768px) {
+    position: absolute;
+      margin-top: -24vh;
+      margin-left: 12vw;
+      visibility: visible;
+    }
+}
+.mobSocials{
+  visibility: hidden;
+  @media (max-width: 768px) {
+    position: absolute;
+      visibility: visible;
+      z-index: 20;
+      bottom: 15vh;
+      left: 12vw;
+      a {
+          margin-right: 3rem;
+          img{
+            max-height: 4vh;
+          }
+        }
+    }
+}
 `;
 const Back = styled.div`
   .red-wrap {
@@ -101,6 +138,9 @@ const Card = styled.div`
       .social {
         position: absolute;
         bottom: 5%;
+        @media (max-width: 768px) {
+        display: none;
+        }
         a {
           margin-right: 3rem;
           img{
@@ -164,6 +204,9 @@ const Button = styled.a`
   text-decoration: none;
   display: inline-block;
   font-size: 1rem;
+  @media (max-width: 768px) {
+      display: none;
+    }
 
   &:hover {
     background-color: white;
@@ -195,47 +238,43 @@ function AboutUs() {
             <p className="home-text">
             Person’s Bio Description- Explore the community of developers from around the world here with the National Institute of Technology Patna-chapter
             </p>
-            <Button
-              href="https://gdsc.community.dev/national-institute-of-technology-nit-patna/"
-              target="_blank"
-            >
+            <Button href="https://gdsc.community.dev/national-institute-of-technology-nit-patna/" target="_blank">
               Meet
             </Button>
             <div className="social">
-              <a
-                href=" "
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href=" " target="_blank" rel="noreferrer">
                 <img src="/images/fbLogo.svg" alt="facebook" />
               </a>
-              <a
-                href=" "
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href=" " target="_blank" rel="noreferrer">
                 <img src="/images/instaLogo.svg" alt="instagram" />
               </a>
-              <a
-                href=" "
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href=" " target="_blank" rel="noreferrer">
                 <img src="/images/twitterLogo.svg" alt="twitter" />
               </a>
-              <a
-                href=" "
-                target="_blank"
-                rel="noreferrer"
-              >
+              <a href=" " target="_blank" rel="noreferrer">
                 <img src="/images/linkedinLogo.svg" alt="linkedin" />
               </a>
             </div>
           </div>
         </div>
       </Card>
-            <Navbar />
-        </Container>
+      <button className="mobButton"><a href="https://gdsc.community.dev/national-institute-of-technology-nit-patna/">Meet</a></button>
+      <div className="mobSocials">
+      <a href=" " target="_blank" rel="noreferrer">
+                <img src="/images/fbLogo.svg" alt="facebook" />
+              </a>
+              <a href=" " target="_blank" rel="noreferrer">
+                <img src="/images/instaLogo.svg" alt="instagram" />
+              </a>
+              <a href=" " target="_blank" rel="noreferrer">
+                <img src="/images/twitterLogo.svg" alt="twitter" />
+              </a>
+              <a href=" " target="_blank" rel="noreferrer">
+                <img src="/images/linkedinLogo.svg" alt="linkedin" />
+              </a>
+      </div>
+     <Navbar />
+      </Container>
     )
 }
 

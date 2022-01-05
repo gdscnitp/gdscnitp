@@ -2,7 +2,10 @@ import styled from "styled-components";
 import "../styles/Home.module.css";
 import LogoGDSC from "../components/logo";
 import Navbar from "../components/navbar";
-import ProjectButton from "../components/ProjectButton";
+import ProjectButton1 from "../components/ProjectButton1";
+import ProjectButton2 from "../components/ProjectButton2";
+import ProjectButton3 from "../components/ProjectButton3";
+import ProjectButton4 from "../components/ProjectButton4";
 import ProjectScroll from "../components/ProjectScroll";
 
 const Container =styled.div`
@@ -23,7 +26,6 @@ const Back = styled.div`
       width: 50vw;
       top: 55vh;
       right: 0;
-      /* bottom: 30vh; */
       height: 22vh;
       z-index: -1;
     }
@@ -33,7 +35,6 @@ const Back = styled.div`
     top: 0;
     position: absolute;
     width: auto;
-    /* width: 22vw; */
     height: 100vh;
     max-height: 100vh;
     overflow: hidden;
@@ -123,7 +124,7 @@ const Card = styled.div`
         text-align: left;
         max-width:600px;
       }
-      .social {
+      /* .social {
         position: absolute;
         bottom: 5%;
         a {
@@ -132,7 +133,7 @@ const Card = styled.div`
             max-height: 4vh;
           }
         }
-      }
+      } */
     }
     @media (max-width: 768px ) {
       position: relative;
@@ -187,7 +188,6 @@ const Button = styled.a`
   &:hover {
     background-color: white;
     font-weight: bold;
-    /* color: black; */
     border: 4px solid #4285f4;
   }
 `;
@@ -225,8 +225,14 @@ function project() {
         {/* <ProjectScroll number="1" /> */}
         <div className="milestones">
           Milestones Cleared
+          <div>
+          <ProjectButton1 />
+          <ProjectButton2 />
+          <ProjectButton3 />
+          <ProjectButton4 />
           </div>
-        <div style={{marginLeft: "5vw"}} >
+          </div>
+        {/* <div style={{marginLeft: "5vw"}} >
         <ProjectButton name="Idea"  />
         </div>
         <div style={{marginLeft: "13vw"}} >
@@ -237,7 +243,7 @@ function project() {
         </div>
         <div style={{marginLeft: "29vw"}} >
         <ProjectButton name="Live" />
-        </div>
+        </div> */}
 
         <Navbar />
       </Project>
