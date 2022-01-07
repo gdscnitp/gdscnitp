@@ -223,7 +223,7 @@ function event() {
         </div>
       </Card>
         <Navbar />
-        <NavMobile />
+        {/* <NavMobile /> */}
     </Container>
   );
 }
