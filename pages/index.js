@@ -291,8 +291,7 @@ function Home() {
               around the world here with the National
               Institute of Technology Patna-chapter
             </p>
-            <Button href="https://gdsc.community.dev/national-institute-of-technology-nit-patna/" target="_blank"
-            >
+            <Button href="https://gdsc.community.dev/national-institute-of-technology-nit-patna/" target="_blank">
               Join Us
             </Button>
             <div className="social">
@@ -329,7 +328,7 @@ function Home() {
       </div>
       <Navbar />
 
-      <NavMobile />
+      {/* <NavMobile /> */}
     
     </Container>
 

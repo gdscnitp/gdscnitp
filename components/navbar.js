@@ -5,7 +5,7 @@ import Layout from "./Layout";
 
 const Nav = styled.div`
 @media (max-width: 768px){
-  display:none;
+  /* display:none; */
 }
   position: absolute;
   bottom: 0;
@@ -20,33 +20,42 @@ const Nav = styled.div`
   display: flex;
   color: #fff;
 
-  
-  
-  
-  
-  
-  
-
 `;
 
 const Navbar = () => {
   return (
+    // <Nav>
+
+    //   <Link href="/">
+    //     <a className="home">Home</a>
+    //   </Link>
+    //   <Link href="/event">
+    //     <a className="events">Events</a>
+    //   </Link>
+    //   <Link href="/project">
+    //     <a className="project">Project </a>
+    //   </Link>
+    //   <Link href="/AboutUs">
+    //     <a className="about">About Us</a>
+    //   </Link>
+      
+    // </Nav>
     <Nav>
 
-      <Link href="/">
-        <a className="home">Home</a>
-      </Link>
-      <Link href="/event">
-        <a className="events">Events</a>
-      </Link>
-      <Link href="/project">
-        <a className="project">Project </a>
-      </Link>
-      <Link href="/AboutUs">
-        <a className="about">About Us</a>
-      </Link>
-      
-    </Nav>
+    <Link href="/">
+      <a className="home">Home</a>
+    </Link>
+    <Link href="/">
+      <a className="events">Events</a>
+    </Link>
+    <Link href="/">
+      <a className="project">Project </a>
+    </Link>
+    <Link href="/">
+      <a className="about">About Us</a>
+    </Link>
+    
+  </Nav>
   );
 };
 
